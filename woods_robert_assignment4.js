@@ -66,6 +66,15 @@ alert("JavaScript works!");
 			} else { 
 				console.log(false); 
 };
+ 
+//5. Format a number to use a specific number of decimal places as for money: 2.1->2.10.
+
+	function amount(total){
+		var myCost = total.toFixed(2);
+			return myCost;
+	};
+				console.log("$" + amount(2.1));
+
 		
 
 		
