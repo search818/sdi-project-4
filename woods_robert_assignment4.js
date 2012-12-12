@@ -16,11 +16,11 @@ alert("JavaScript works!");
 			return outputNumber; 
 	};
 			if (phoneNumberOut = verifyPhone(phoneNumber.substring(0,areaEnd), phoneNumber.substring(start,end))) {
-			console.log(true); 
+				console.log(true); 
 			} else { 
-				console.log(false); };
+				console.log(false); 
+};
 		
- 
 //2. Does a string follow an aaa@bbb.ccc pattern like an email address?
 
 	var email = "search818@gmail.com",
@@ -32,9 +32,28 @@ alert("JavaScript works!");
 			return validateEmail;
 	};
 			if (emailOutput = checkEmail(email.substring(0,userName),email.substring(siteUrl,end))) { 
-			console.log(true); 
+				console.log(true); 
+			} else { 
+				console.log(false); 
+};
+				
+//3. Is the string a URL? (Does it start with http: or https:?)
+
+	var url = "https://www.anysite.com",
+		checkUrl = function(http, url) {
+		var validateUrl = http + url;
+			return validateUrl;
+	};
+			if (urlOutput = checkUrl(url.substring(0,url.lastIndexOf("/")), url.substring(url.lastIndexOf("/"), url.length))) { 
+				console.log(true); // If true string will display the site url
 			} else { 
 				console.log(false); };
+	var httpCheck = url.substring(0, url.lastIndexOf("/"));
+			if (httpCheck.length > 6) { // Displays whether the url is http or https
+				console.log("URL begins with: https");
+			} else { 
+				console.log("URL begins with: http"); 
+};
 		
 
 		
