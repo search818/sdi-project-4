@@ -54,6 +54,18 @@ alert("JavaScript works!");
 			} else { 
 				console.log("URL begins with: http"); 
 };
+ 
+//4. Given a string version of a number such as "50", return the value as an actual Number, such as 50
+
+	var checkNumber = function(number) {
+		var validateNumber = number;
+			return validateNumber;
+	};
+			if (numberOutput = parseFloat(checkNumber("50")) === 50) { // parseFloat changes the string to a int 
+				console.log(true); // displays true if converted to number and equals 50
+			} else { 
+				console.log(false); 
+};
 		
 
 		
