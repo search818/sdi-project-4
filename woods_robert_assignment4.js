@@ -75,6 +75,19 @@ alert("JavaScript works!");
 	};
 				console.log("$" + amount(2.1));
 
+//6. This function capitalizes 1st letter of each word.    
+    
+    var capitalize = function(sentence){
+         var chopped = sentence.split(" ");
+         	var capped = [ ];      
+         
+        for(i=0;chopped.length > i; i++){
+        	upper = chopped[i].charAt(0).toUpperCase() + chopped[i].slice(1);
+            
+          	capped.push(upper);    
+    }
+       		return capped.join(" ");
+};
 		
 
 		
